@@ -24,16 +24,13 @@ class Connection
             1 => "URL_UPDATED",
             2 => "URL_DELETED"
         );
-        $t = $type[$type_id];
-        // Get a Guzzle HTTP Client
         $httpClient = $this->BasicAuth()->authorize();
         $endpoint = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
 
         $content = "{
           'url': '$currentURL/$url',
-          'type': '$t'
+          'type': '$type[$type_id];
         }";
-
         $response = $httpClient->post($endpoint, [ 'body' => $content ]);
         $status_code = $response->getStatusCode();
         return var_dump($status_code);
