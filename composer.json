@@ -1,0 +1,16 @@
+{
+    "name": "developer/research",
+    "description": "123",
+    "authors": [
+        {
+            "name": "Maksim Sadykov",
+            "email": "sadykov-maksim-2003@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "classmap": ["src"]
+    }
+}
