@@ -1,6 +1,6 @@
 {
     "name": "sadykov_maksim/research",
-    "description": "123",
+    "description": "Основной задачей модуля является принудительная индексация в поисковой системе Google",
     "autoload": {
         "psr-4": {
             "Developer\\Research\\": "src/"
